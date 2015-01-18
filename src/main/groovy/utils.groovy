@@ -13,4 +13,8 @@ class utils {
             }
         }
     }
+
+    static Integer timesTwo(Integer x) {
+    	return x * 2;
+    }
 }

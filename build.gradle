@@ -1,10 +1,11 @@
 buildscript {
     repositories {
         jcenter()
-    }
+     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.0.0'
         classpath 'org.codehaus.groovy:gradle-groovy-android-plugin:0.3.5'
+        classpath 'org.robolectric:robolectric-gradle-plugin:0.14.+'
     }
 }
 
@@ -14,6 +15,7 @@ repositories {
 
 apply plugin: 'com.android.application'
 apply plugin: 'groovyx.grooid.groovy-android'
+apply plugin: 'robolectric'
 
 android {
     compileSdkVersion 21
@@ -21,7 +23,7 @@ android {
 
     defaultConfig {
         applicationId "me.zhihan.helloworld1"
-        minSdkVersion 21
+        minSdkVersion 18
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
@@ -34,9 +36,15 @@ android {
             minifyEnabled false
         }
     }
+    sourceSets {
+        unitTest {
+            java.srcDir file('src/androidTest/groovy')
+        }
+    }
 }
-
 
 dependencies {
     compile 'org.codehaus.groovy:groovy:2.4.0-beta-3'
+    testCompile "junit:junit:4.10"
+    testCompile "org.robolectric:robolectric:2.4"
 }

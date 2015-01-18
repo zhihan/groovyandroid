@@ -22,11 +22,11 @@ public class HelloActivity extends Activity {
 
         String messageText = "Hello Groovy!";
         TextView message = findViewById(R.id.hello_text) as TextView
-        message.text = messageText;
+        message.setText(messageText);
 
         Button button = findViewById(R.id.button) as Button
         button.setOnClickListener(utils.createOnClickListener {View v ->
-            message.text = "Clicked!";
+            message.setText("Clicked!");
             return
         })
     }
