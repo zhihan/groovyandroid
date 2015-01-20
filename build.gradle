@@ -22,20 +22,12 @@ android {
 
     defaultConfig {
         applicationId "me.zhihan.helloworld1"
-        minSdkVersion 21
+        minSdkVersion 19
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
     }
 
-    signingConfigs {
-        debug {
-	    storeFile file("debug.keystore")
-	    storePassword "natalie"
-	    keyAlias "zhihan"
-	    keyPassword "natalie"
-	}
-    }
     buildTypes {
         debug {
             debuggable true
