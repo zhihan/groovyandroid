@@ -3,7 +3,6 @@
     package="me.zhihan" >
     <application
         android:allowBackup="true"
-        android:debuggable="true"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 

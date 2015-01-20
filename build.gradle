@@ -15,7 +15,6 @@ repositories {
 
 apply plugin: 'com.android.application'
 apply plugin: 'groovyx.grooid.groovy-android'
-apply plugin: 'robolectric'
 
 android {
     compileSdkVersion 21
@@ -23,7 +22,7 @@ android {
 
     defaultConfig {
         applicationId "me.zhihan.helloworld1"
-        minSdkVersion 18
+        minSdkVersion 21
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
@@ -54,6 +53,4 @@ android {
 
 dependencies {
     compile 'org.codehaus.groovy:groovy:2.4.0-beta-3'
-    testCompile "junit:junit:4.10"
-    testCompile "org.robolectric:robolectric:2.4"
 }
