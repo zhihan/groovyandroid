@@ -30,7 +30,4 @@ public class HelloActivity extends Activity {
             return
         })
     }
-
-
-
 }
