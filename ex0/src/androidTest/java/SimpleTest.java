@@ -15,4 +15,9 @@ public class SimpleTest {
 	public void testTimesTwo() {
 		Assert.assertEquals(Utils.timesTwo(1), 2);
 	}
+
+	@Test
+	public void testHelloWorld() {
+		Assert.assertEquals(Utils.hello("world"), "Hello world");
+	}
 }

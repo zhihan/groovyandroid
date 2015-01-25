@@ -8,4 +8,10 @@ class Utils {
 	static int timesTwo(int x) {
 		x * 2;
 	}
+
+	@CompileStatic
+	static String hello(String world) {
+		"Hello " + world
+	}
+
 }
