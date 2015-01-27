@@ -6,12 +6,12 @@ Set up the Android SDK on your desktop. Go to [http://developer.android.com/sdk/
 
  1. Download and extract the SDK tools.
  2. Set the environement variable ANDROID_HOME to the root of the extracted SDK.
- 3. Launch the Android tools and install updates.
+ 3. Launch the Android tools and install updates using the following command.
 
 
-    ${ANDROID_HOME}/tools/android
+        ${ANDROID_HOME}/tools/android
 
- You must install at least
+You must install at least
 
 1. Android SDK Tools
 2. Android SDK Platform-tools
