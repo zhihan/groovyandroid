@@ -1,18 +1,17 @@
 package me.zhihan.groovyandroid.test
 
+import android.test.AndroidTestCase
 import groovy.transform.CompileStatic
 import me.zhihan.groovyandroid.Utils
-import org.robolectric.RobolectricTestRunner
-import org.junit.runner.RunWith 
-import org.junit.Test
-import org.junit.Assert
 
 @CompileStatic
-@RunWith(RobolectricTestRunner.class)
-public class UtilsTest {
-	@Test
+public class UtilsTest extends AndroidTestCase {
 	public void testTimesTwo() {
-		Assert.assertEquals(Utils.timesTwo(1), 2)
+		assertEquals(Utils.timesTwo(1), 2)
+	}
+
+	public void testHello() {
+		assertEquals("Hello world", Utils.hello("world"))
 	}
 }
 
