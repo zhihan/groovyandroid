@@ -8,20 +8,20 @@ Set up the Android SDK on your desktop. Go to [http://developer.android.com/sdk/
  2. Set the environement variable ANDROID_HOME to the root of the extracted SDK.
  3. Launch the Android tools and install updates.
 
-     ${ANDROID_HOME}/tools/android
-   
+
+    ${ANDROID_HOME}/tools/android
+
  You must install at least
 
 1. Android SDK Tools
 2. Android SDK Platform-tools
 3. Android SDK Build-tools
-4. Under Android 5.0.1 (API 21)
+4. Under Android 5.0.1 (API 21):
  - SDK Platform
-5. Under Extras
+5. Under Extras:
  - Android Support Library
  - Intel x86 Emulator Accelerator (HAXM installer)
-
- 4. Install Intel x86 Emulator accelerator. Go to ${ANDROD_HOME}/extra/intel and install the downloaded package.
+4. Install Intel x86 Emulator accelerator. Go to ${ANDROD_HOME}/extra/intel and install the downloaded package.
 
 ## Set up Android Virtual Device
 
