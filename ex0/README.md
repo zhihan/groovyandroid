@@ -30,3 +30,5 @@ Before working on the code, you need to create an Emulated Anroid Virtual Device
     ${ANDROID_HOME}/tools/android avd
 
  The easiest way is to browse for the standard device definitions and create one from there. Once created your own AVD. Go to the list of AVDs and start the device and make sure you can see an emulator running the emulated device in a separate window.
+
+## Set up Groovy Android plugin
